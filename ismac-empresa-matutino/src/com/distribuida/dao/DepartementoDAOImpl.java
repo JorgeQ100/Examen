@@ -10,13 +10,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.distribuida.entities.Departamento;
-import com.distribuida.entities.Empleado;
-
 
 
 @Repository
-public class DepartamentoDAOImpl implements DepartemanetoDAO {
+public class DepartementoDAOImpl implements DepartemanetoDAO {
 
+	
 	@Autowired
 	private SessionFactory sessionFactory;
 	
@@ -26,6 +25,7 @@ public class DepartamentoDAOImpl implements DepartemanetoDAO {
 		// TODO Auto-generated method stub
 		Session session = sessionFactory.getCurrentSession();
 		return session.createQuery("from Departamento", Departamento.class).getResultList();
+	}
 
 	@Override
 	public void add(Departamento departamento) {
@@ -41,6 +41,11 @@ public class DepartamentoDAOImpl implements DepartemanetoDAO {
 
 	@Override
 	public void dell(Departamento departamento) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 	}
