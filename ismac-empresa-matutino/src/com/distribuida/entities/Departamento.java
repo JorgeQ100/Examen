@@ -28,6 +28,9 @@ public class Departamento {
 	private String DniDirector;
 	@Column(name = "FechaIngresoDirector")
 	private Date  FechaIngresoDirector;
+	
+	public Departamento() {};
+	
 	public Departamento(int id_numeroDpto, String nombreDpto, int numeroDpto, String dniDirector,
 			Date fechaIngresoDirector) {
 		this.id_numeroDpto = id_numeroDpto;
